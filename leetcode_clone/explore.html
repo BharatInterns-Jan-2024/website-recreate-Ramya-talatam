@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Explore</title>
 
     <!-- Meta-Tags -->      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -191,6 +191,7 @@ footer li:not(:first-child):hover
         margin: 0 10px;
         cursor: grab;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
+        
     }
     .explore-card:hover{
          /* shadow to be bigger */
@@ -203,13 +204,23 @@ footer li:not(:first-child):hover
 
     /* Image Style */
   
+.bgc
+{
+    border-radius: 20px 20px 0 0;
+    background-size: 350px 200px;
+    background-position: right center;
+    height: 200px;
+    background: linear-gradient(#167af4, #00c1de);
+}
 .bg
 {
+    
     
     border-radius: 20px 20px 0 0;
     background-size: 350px 200px;
     background-position: right center;
     height: 200px;
+   
 }
     /* Heading Style */
     .explore-heading {
@@ -634,10 +645,12 @@ const jsonData3=[
         card.className = 'explore-card';
 
         card.innerHTML = ` 
-        <div class="bg"style="background-image: url(${item.bgImageURL});" >
+        <div class="bgc">
+        <div class=" bg"style="background-image: url(${item.bgImageURL});" >
             <div class="explore-heading">
             <div class="description">${item.description}</div>
             <div class="title">${item.title}</div>
+        </div>
         </div>
         </div>
         <div class="fitem">

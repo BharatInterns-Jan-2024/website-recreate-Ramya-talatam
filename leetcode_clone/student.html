@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student</title>
+
+    <!-- Meta-Tags -->      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="navbar.css" type="text/css" media="all">
+    <link rel="stylesheet" href="student.css" type="text/css" media="all">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="padding-left:0"><img id="lc-icon" alt="icon" src="lc-icon.svg"></li>
+            <li><a id="explore" href="#">Explore</a></li>
+            <li><a href="#">Problems</a></li>
+            <li><a href="#">Contest</a></li>
+            <li><a href="#">Discuss</a></li>
+            <li>
+                <a href="#">Interview</a><img style="height: 14px;" src="dropdown.svg">
+                <!-- <details>
+                    <summary><a href="#">Interview</a></summary>
+                    <ul>
+                        <li><a href="#">Online Interview</a></li>
+                        <li><a href="#">Assessment</a></li>
+                    </ul>
+                </details> -->
+            </li>
+            <li >
+                <a style="color: #ffa116;" href="#">Store</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="orange" class="ml-1 h-[14px] w-[14px]" aria-hidden="true"><path fill-rule="evenodd" d="M4.929 7.913l7.078 7.057 7.064-7.057a1 1 0 111.414 1.414l-7.77 7.764a1 1 0 01-1.415 0L3.515 9.328a1 1 0 011.414-1.414z" clip-rule="evenodd"></path></svg>
+                <!-- <details>
+                    <summary ></summary>
+                    <ul>
+                        <li><a href="#">Redeem</a></li>
+                        <li><a href="#">Premium</a></li>
+                    </ul>
+                </details> -->
+            </li>
+        <div id="nav-end">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.20374 15.8174C6.18177 15.8563 6.15975 15.8945 6.13771 15.9322H17.8623C17.8403 15.8945 17.8182 15.8563 17.7963 15.8174C16.8756 14.1898 16.3333 12.0111 16.3333 9.21793C16.3333 6.93819 14.4012 5.07507 12 5.07507C9.5988 5.07507 7.66667 6.93819 7.66667 9.21793C7.66667 12.0111 7.12442 14.1898 6.20374 15.8174ZM20 17.9322H4.00001C3.00196 17.9322 2.61971 16.6307 3.45925 16.091C3.66114 15.9612 4.0464 15.5691 4.46294 14.8327C5.20893 13.5139 5.66667 11.6748 5.66667 9.21793C5.66667 5.81702 8.51018 3.07507 12 3.07507C15.4898 3.07507 18.3333 5.81702 18.3333 9.21793C18.3333 11.6748 18.7911 13.5139 19.5371 14.8327C19.9536 15.5691 20.3389 15.9612 20.5408 16.091C21.3803 16.6307 20.9981 17.9322 20 17.9322ZM12.9372 19.2783C13.2219 18.805 13.8363 18.6521 14.3096 18.9368C14.7828 19.2215 14.9357 19.836 14.651 20.3092C14.0976 21.2292 13.0875 21.7902 12 21.7902C10.9125 21.7902 9.90245 21.2292 9.34903 20.3092C9.06434 19.836 9.2172 19.2215 9.69045 18.9368C10.1637 18.6521 10.7781 18.805 11.0628 19.2783C11.2515 19.5919 11.6085 19.7902 12 19.7902C12.3915 19.7902 12.7485 19.5919 12.9372 19.2783Z"></path></svg></li>
+            <li id="streak"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="20" height="20"><path fill-rule="evenodd" d="M7.19 1.564a.75.75 0 01.729.069c2.137 1.475 3.373 3.558 3.981 5.002l.641-.663a.75.75 0 011.17.115c1.633 2.536 1.659 5.537.391 7.725-1.322 2.282-3.915 2.688-5.119 2.688-1.177 0-3.679-.203-5.12-2.688-.623-1.076-.951-2.29-.842-3.528.109-1.245.656-2.463 1.697-3.54.646-.67 1.129-1.592 1.468-2.492.337-.895.51-1.709.564-2.105a.75.75 0 01.44-.583zm.784 2.023c-.1.368-.226.773-.385 1.193-.375.997-.947 2.13-1.792 3.005-.821.851-1.205 1.754-1.282 2.63-.078.884.153 1.792.647 2.645C6.176 14.81 7.925 15 8.983 15c1.03 0 2.909-.366 3.822-1.94.839-1.449.97-3.446.11-5.315l-.785.812a.75.75 0 01-1.268-.345c-.192-.794-1.04-2.948-2.888-4.625z" clip-rule="evenodd"></path></svg></li><span>0</span>
+            <li><img id="avatar" src="https://assets.leetcode.com/users/default_avatar.jpg" alt="avatar"></li>
+        <li><button id="prem"><span>Premium</span></button></li>    
+        </div>
+    
+        </ul>
+        
+    </nav>
+
+
+    <main>
+        <!-- <div class="bg1"> <img src="https://leetcode.com/_next/static/images/landing-oval-4e0c58914f7b91879ef15b572db341b7.png"></div> -->
+        <div class="d1">
+            <div >
+                <h1>Bring LeetCode to Your School</h1>
+                <p>Save 38% off on our Yearly Subscription!</p> 
+                    <p>Gather 50 or more schoolmates to get LeetCode Premium annually for a continued lifetime at only <br> $99! <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-full w-full"><path fill-rule="evenodd" d="M12 11a1 1 0 011 1v4a1 1 0 11-2 0v-4a1 1 0 011-1zm0-3a1 1 0 110 2 1 1 0 010-2zm0 14C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd"></path></svg></p>
+            </div>
+            <div>
+                <img src="https://leetcode.com/_next/static/images/school-ed95f17f410f2757ac13ab98cea3f073.png" alt="student">
+                </div>
+        </div>
+        <div class="d2">
+            <div style="background: linear-gradient(90.2deg, #FFE3C7 0.12%, #FFE34E 98.4%); height: 2.25rem; border-top-left-radius: 24px;
+            border-top-right-radius: 24px; width: 100%;"> </div>
+           <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-[18px] w-[18px]"><path fill-rule="evenodd" d="M6.204 15.817a8.872 8.872 0 01-.066.115h11.724a8.535 8.535 0 01-.066-.115c-.92-1.627-1.463-3.806-1.463-6.6 0-2.279-1.932-4.142-4.333-4.142-2.401 0-4.333 1.863-4.333 4.143 0 2.793-.543 4.972-1.463 6.6zM20 17.932H4c-.998 0-1.38-1.301-.54-1.841.201-.13.586-.522 1.003-1.258.746-1.32 1.204-3.158 1.204-5.615 0-3.401 2.843-6.143 6.333-6.143s6.333 2.742 6.333 6.143c0 2.457.458 4.296 1.204 5.615.417.736.802 1.128 1.004 1.258.84.54.457 1.841-.541 1.841zm-7.063 1.346a1 1 0 111.714 1.031A3.09 3.09 0 0112 21.79a3.09 3.09 0 01-2.651-1.48 1 1 0 011.714-1.032c.188.314.545.512.937.512s.748-.198.937-.512z" clip-rule="evenodd"></path></svg>
+       <span>Notify me when it starts</span>
+           </button>
+          <p> <span style="font-size: 60px; ">$99</span>
+            <span style="font-size: 18px;">/yr</span>
+            <span style="color: #3c3c434d; text-decoration: line-through;font-size: 1.25rem;
+            line-height: 1.75rem;">$159</span></p>
+           <p style="color: #262626bf; font-size: 1.5rem;
+           line-height: 2rem;">Coming soon</p>
+        </div>
+        <div class="d3">
+          <div style=" display: flex; flex-direction: row;"> <img style="width: 40px;" src="https://leetcode.com/_next/static/images/horn-bb5c2428d620d63cf72f145710de8055.png" alt=""><p>Discover <span style="color: #007AFF;">how you can earn rewards</span> by inviting more people to join this event!</p></div>
+        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="mr-1.5 h-4.5 w-4.5"><path fill-rule="evenodd" d="M11.3 8.3H19a3 3 0 013 3V19a3 3 0 01-3 3h-7.7a3 3 0 01-3-3v-7.7a3 3 0 013-3zm0 2a1 1 0 00-1 1V19a1 1 0 001 1H19a1 1 0 001-1v-7.7a1 1 0 00-1-1h-7.7zm-5.6 3.4a1 1 0 110 2h-.9A2.8 2.8 0 012 12.9V4.8A2.8 2.8 0 014.8 2h8.1a2.8 2.8 0 012.8 2.8v.9a1 1 0 11-2 0v-.9a.8.8 0 00-.8-.8H4.8a.8.8 0 00-.8.8v8.1a.8.8 0 00.8.8h.9z" clip-rule="evenodd"></path></svg>Copy my link</button>
+            <div style="display: flex; gap:2rem;">
+                <svg width="40" height="40" class="cursor-pointer" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_691_1919)"><path d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z" fill="#1877F2"></path><path d="M27.7777 25.5556L28.6666 20.0001H23.3333V16.1112C23.3333 14.5556 23.8888 13.3334 26.3333 13.3334H28.8888V8.22228C27.4444 8.00005 25.8888 7.77783 24.4444 7.77783C19.8888 7.77783 16.6666 10.5556 16.6666 15.5556V20.0001H11.6666V25.5556H16.6666V39.6667C17.7777 39.8889 18.8888 40.0001 20 40.0001C21.1111 40.0001 22.2222 39.8889 23.3333 39.6667V25.5556H27.7777Z" fill="white"></path></g><defs><clipPath id="clip0_691_1919"><path d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z" fill="white"></path></clipPath></defs></svg>
+                <svg width="40" height="40" class="cursor-pointer" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z" fill="#2D64BC"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.8263 30.8472H9.12386V15.7148H13.8263V30.8472ZM11.4463 13.858C9.96153 13.858 8.99988 12.8027 8.99988 11.5038C8.99988 10.1732 9.98874 9.15262 11.5068 9.15262C13.0249 9.15262 13.9533 10.1732 13.982 11.5038C13.985 12.8057 13.0234 13.858 11.4463 13.858ZM30.9999 30.8472H26.299V22.46C26.299 20.5095 25.6171 19.1819 23.916 19.1819C22.6172 19.1819 21.8446 20.08 21.5013 20.9449C21.3773 21.2519 21.3471 21.6873 21.3471 22.1183V30.8442H16.6417V20.5382C16.6417 18.6512 16.5812 17.0711 16.5177 15.7118H20.6017L20.8194 17.8135H20.9116C21.5316 16.8246 23.0481 15.3701 25.5853 15.3701C28.6789 15.3701 30.9999 17.4416 30.9999 21.8975V30.8472Z" fill="white"></path></svg>
+                <svg width="40" height="40" class="cursor-pointer" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z" fill="black" fill-opacity="0.04"></path><path d="M26.074 10.5208H29.2901L22.2638 18.5514L30.5297 29.4791H24.0576L18.9884 22.8515L13.1881 29.4791H9.97007L17.4854 20.8896L9.55591 10.5208H16.1923L20.7744 16.5787L26.074 10.5208ZM24.9452 27.5541H26.7273L15.224 12.3447H13.3116L24.9452 27.5541Z" fill="#1A1A1A"></path></svg>
+
+            </div>
+        <p><span style="color:black; font-weight: bold;">0</span>  people have joined via your link</p>    
+    </div>
+    
+    <div class="d4"><h1>Price Comparison</h1>
+        <p>prices are marked in USD</p>
+    </div>
+    <div class="d5">
+    <div><p style="color: #262626bf; font-size: 1.5rem;
+        line-height: 2rem;">Premium subscription with student discount</p>
+        <div style="display: flex; flex-direction: row;    align-items: baseline;
+        "><h1>$8.25</h1><span>/month</span></div>
+        <p>Yearly subscription at $99<br>
+            Saves over 37%, $60 in total</p>
+        </div>
+
+    <div><p style="color: #262626bf; font-size: 1.5rem;
+        line-height: 2rem;">Premium subscription at regular price</p>
+         <div style="display: flex; flex-direction: row;    align-items: baseline;
+         "><h1>$13.25</h1><span>/month</span></div>
+        <p>Annually premium at $159</p>
+    </div>
+    </div>
+
+    <div class="faq1">
+        <h3>How does it work? Just follow these simple steps!</h3>
+        <ol class="steps-list">
+            <li>
+              Register your account under your school email address.
+            </li>
+            <li>
+              Pay <span class="font-semibold">$99</span> upon registration to enter this event (premium subscription will not be activated yet).
+            </li>
+            <li>
+              Gather <span class="font-semibold">50</span> people from your school to register! Use your referral code to share the event and win the swags.
+            </li>
+            <li>
+              Patiently wait for people to register - keep checking the progress bar!
+            </li>
+            <li>
+              After <span class="font-semibold">50</span> people have registered, your premium subscription will be activated.
+            </li>
+            <li>
+              If you didn’t reach 50 people before the end of the event, you’ll get <span class="font-semibold">$99</span> full refund.
+            </li>
+          </ol>
+          <h3>All users who have a school email are able to register and purchase the premium at the discounted price before the deadline. So spread the word, act fast, and become the next software engineer at your dream job!</h3>
+    </div>
+
+    <div class="faq2">
+        <h1>Frequently asked questions</h1>
+      
+        
+          <!-- I’ve paid $99, why isn’t my premium subscription activated yet? -->
+          <div class="faq-item">
+            <div class="question">I’ve paid $99, why isn’t my premium subscription activated yet?</div>
+            <div class="answer">
+              <p>Your premium subscription will be activated once your school has reached 50 sign-ups! The sooner your school reaches 50 sign-ups, the sooner premium subscription will be unlocked!</p>
+            </div>
+          </div>
+        
+          <!-- I’ve previously participated in the back-to-school event but canceled my lifelong discount subscription, can I register again? -->
+          <div class="faq-item">
+            <div class="question">I’ve previously participated in the back-to-school event but canceled my lifelong discount subscription, can I register again?</div>
+            <div class="answer">
+              <p>If you once got the lifetime discount at $99 annually, you will not be able to register for the event again to receive this discount again. As stated in the event details, the discount is lifelong for as long as you don’t cancel it. After you have canceled it, you can only resubscribe at the normal rate.</p>
+            </div>
+          </div>
+        
+          <!-- If I participate in this year's back-to-school event but hadn't reached 50 sign-ups, can I register next year for a better discount? -->
+          <div class="faq-item">
+            <div class="question">If I participate in this year's back-to-school event but hadn't reached 50 sign-ups, can I register next year for a better discount?</div>
+            <div class="answer">
+              <p>Sure. The event is open for anyone who has not enjoyed $99 lifetime discount yet. You can register next year to challenge the $99 annual subscription as long as your current plan is not $99.</p>
+            </div>
+          </div>
+        
+          <!-- What qualifies as a school email? -->
+          <div class="faq-item">
+            <div class="question">What qualifies as a school email?</div>
+            <div class="answer">
+              <p>[Answer to the school email question]</p>
+            </div>
+          </div>
+        
+          <!-- What if my school doesn’t reach 50 people? -->
+          <div class="faq-item">
+            <div class="question">What if my school doesn’t reach 50 people?</div>
+            <div class="answer">
+              <p>If your school doesn't reach 50 sign-ups by the deadline, you will get $99 full refund. You'll still have the chance to register next year to get the $99 discount.</p>
+            </div>
+          </div>
+        
+          <!-- What if my school reaches 50 people before the deadline? What happens in the remaining days? -->
+          <div class="faq-item">
+            <div class="question">What if my school reaches 50 people before the deadline? What happens in the remaining days?</div>
+            <div class="answer">
+              <p>In the remaining days, any user from that specific school who registers will continue to get that discounted price. For example: If your school reaches 50 people in 2 days, then every user who registers after will also get the premium subscription for $99 until the end of the event.</p>
+            </div>
+          </div>
+        
+          <!-- What is the difference between this student discount and premium subscription at regular price? -->
+          <div class="faq-item">
+            <div class="question">What is the difference between this student discount and premium subscription at regular price?</div>
+            <div class="answer">
+              <p>There will be no difference in the benefits you'll get. You'll enjoy exactly the same premium content and features, at a lower price!</p>
+            </div>
+          </div>
+        
+          <!-- How can I win the prizes for the referral event? Do I need to participate in the back-to-school event first? -->
+          <div class="faq-item">
+            <div class="question">How can I win the prizes for the referral event? Do I need to participate in the back-to-school event first?</div>
+            <div class="answer">
+              <p>You can refer friends to join LeetCode and win the prizes with or without signing up for the back-to-school event. Everyone will have their own exclusive referral link. We will track how many people sign up through your link, and you will be rewarded according to your count!</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </main>
+</body>
+
+</html>
