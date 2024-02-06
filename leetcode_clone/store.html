@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Store</title>
+
+    <!-- Meta-Tags -->      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="navbar.css" type="text/css" media="all">
+    <link rel="stylesheet" href="store.css" type="text/css" media="all">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="padding-left:0"><img id="lc-icon" alt="icon" src="lc-icon.svg"></li>
+            <li><a id="explore" href="#">Explore</a></li>
+            <li><a href="#">Problems</a></li>
+            <li><a href="#">Contest</a></li>
+            <li><a href="#">Discuss</a></li>
+            <li>
+                <a href="#">Interview</a><img style="height: 14px;" src="dropdown.svg">
+                <!-- <details>
+                    <summary><a href="#">Interview</a></summary>
+                    <ul>
+                        <li><a href="#">Online Interview</a></li>
+                        <li><a href="#">Assessment</a></li>
+                    </ul>
+                </details> -->
+            </li>
+            <li >
+                <a style="color: #ffa116;" href="#">Store</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="orange" class="ml-1 h-[14px] w-[14px]" aria-hidden="true"><path fill-rule="evenodd" d="M4.929 7.913l7.078 7.057 7.064-7.057a1 1 0 111.414 1.414l-7.77 7.764a1 1 0 01-1.415 0L3.515 9.328a1 1 0 011.414-1.414z" clip-rule="evenodd"></path></svg>
+                <!-- <details>
+                    <summary ></summary>
+                    <ul>
+                        <li><a href="#">Redeem</a></li>
+                        <li><a href="#">Premium</a></li>
+                    </ul>
+                </details> -->
+            </li>
+        <div id="nav-end">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.20374 15.8174C6.18177 15.8563 6.15975 15.8945 6.13771 15.9322H17.8623C17.8403 15.8945 17.8182 15.8563 17.7963 15.8174C16.8756 14.1898 16.3333 12.0111 16.3333 9.21793C16.3333 6.93819 14.4012 5.07507 12 5.07507C9.5988 5.07507 7.66667 6.93819 7.66667 9.21793C7.66667 12.0111 7.12442 14.1898 6.20374 15.8174ZM20 17.9322H4.00001C3.00196 17.9322 2.61971 16.6307 3.45925 16.091C3.66114 15.9612 4.0464 15.5691 4.46294 14.8327C5.20893 13.5139 5.66667 11.6748 5.66667 9.21793C5.66667 5.81702 8.51018 3.07507 12 3.07507C15.4898 3.07507 18.3333 5.81702 18.3333 9.21793C18.3333 11.6748 18.7911 13.5139 19.5371 14.8327C19.9536 15.5691 20.3389 15.9612 20.5408 16.091C21.3803 16.6307 20.9981 17.9322 20 17.9322ZM12.9372 19.2783C13.2219 18.805 13.8363 18.6521 14.3096 18.9368C14.7828 19.2215 14.9357 19.836 14.651 20.3092C14.0976 21.2292 13.0875 21.7902 12 21.7902C10.9125 21.7902 9.90245 21.2292 9.34903 20.3092C9.06434 19.836 9.2172 19.2215 9.69045 18.9368C10.1637 18.6521 10.7781 18.805 11.0628 19.2783C11.2515 19.5919 11.6085 19.7902 12 19.7902C12.3915 19.7902 12.7485 19.5919 12.9372 19.2783Z"></path></svg></li>
+            <li id="streak"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="20" height="20"><path fill-rule="evenodd" d="M7.19 1.564a.75.75 0 01.729.069c2.137 1.475 3.373 3.558 3.981 5.002l.641-.663a.75.75 0 011.17.115c1.633 2.536 1.659 5.537.391 7.725-1.322 2.282-3.915 2.688-5.119 2.688-1.177 0-3.679-.203-5.12-2.688-.623-1.076-.951-2.29-.842-3.528.109-1.245.656-2.463 1.697-3.54.646-.67 1.129-1.592 1.468-2.492.337-.895.51-1.709.564-2.105a.75.75 0 01.44-.583zm.784 2.023c-.1.368-.226.773-.385 1.193-.375.997-.947 2.13-1.792 3.005-.821.851-1.205 1.754-1.282 2.63-.078.884.153 1.792.647 2.645C6.176 14.81 7.925 15 8.983 15c1.03 0 2.909-.366 3.822-1.94.839-1.449.97-3.446.11-5.315l-.785.812a.75.75 0 01-1.268-.345c-.192-.794-1.04-2.948-2.888-4.625z" clip-rule="evenodd"></path></svg></li><span>0</span>
+            <li><img id="avatar" src="https://assets.leetcode.com/users/default_avatar.jpg" alt="avatar"></li>
+        <li><button id="prem"><span>Premium</span></button></li>    
+        </div>
+    
+        </ul>
+        
+    </nav>
+    <main>
+
+        <div class="wrapper" >
+        <div class="container">
+            <div class="logo"><img src="https://leetcode.com/static/webpack_bundles/images/LeetCode_new_logo_light.0f4d45e9c.svg" alt="leetcode"></div>
+            <div class="titlebar"> <span class="title">LeetCode </span>Store</div>
+            <p>Shop in our store or redeem our products for free by using LeetCoins.</p>
+            <ul class="btns">
+                <li class="active"><a href="#"><i class="fa fa-gift" aria-hidden="true"></i>&nbsp;Redeem</a></li>
+                <li><a data-toggle="tab" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Earn <span class="lc">LeetCoin</span></a></li>
+                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>&nbsp;Premium</a></li>
+                <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp; View Orders</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="items">
+        <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/time_travel_ticket/time_travel_ticket.png" alt="Time Travel Ticket">
+            <p class="pp">Time Travel Ticket</p>
+            <p>For Daily Coding Challenge</p>
+            <button class="btn btn-warning btn-yellow">70 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+          <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/premium/premium.png" alt="30-Day Premium Subscription">
+            <p class="pp">30-Day Premium Subscription</p>
+            <p>Premium</p>
+            <button>5,000 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+          <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/t_shirt_promo/t_shirt_promo.png" alt="LeetCode T-Shirt">
+            <p class="pp">LeetCode T-Shirt</p>
+            <p>Redeem our high-quality t-shirts</p>
+            <button>6,000 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+          <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/cap/cap_1699490645.png" alt="LeetCode Cap">
+            <p class="pp">LeetCode Cap</p>
+            <p>Comes in black or white</p>
+            <button>5,400 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+          <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/leetcode_kit/leetcode_kit_1640301367.png" alt="LeetCode Kit">
+            <p class="pp">LeetCode Kit</p>
+            <p>Includes official t-shirt, keychain, and coaster</p>
+            <button>7,800 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+          <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/laptop_sleeve/laptop_sleeve_1626301432.png" alt="LeetCode Laptop Sleeve">
+            <p class="pp">LeetCode Laptop Sleeve</p>
+            <p>LeetCode's exclusive laptop sleeve</p>
+            <button>8,000 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+          <div class="card">
+            <img src="https://assets.leetcode.com/lc_store/notebook/notebook_1635289084.png" alt="LeetCode Big O Notebook">
+            <p class="pp">LeetCode Big O Notebook</p>
+            <p>LeetCode wide rule notebook with Big-O complexity chart</p>
+            <button>9,900 <img src="https://leetcode.com/static/images/LeetCoin.png" height="15px" alt="LeetCoin"></button>
+          </div>
+          
+    </div>
+    <div class="bar"><p style="font-size: 20px;">Redeem With Code</p>
+        <div><input  placeholder="Enter Redeem Code" value="">
+            <button>Redeem</button></div>
+    </div>
+    </main>
+
+    <footer>
+
+        <nav>
+        <ul>
+            <li style="color: #757575;
+            margin-right: 20px; font-size: 12px;">Copyright © 2024 LeetCode</li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Bug Bounty</a></li>
+            <li><a href="#">Online Interview</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <div id="nav-end">
+            <img style="height:20px;"src="us.svg" alt="us">
+            <li style="float: right;"><a href="#">United States</a></li>
+        </div>
+        </ul>
+    </nav>
+    </footer>
+</body>
+</html>

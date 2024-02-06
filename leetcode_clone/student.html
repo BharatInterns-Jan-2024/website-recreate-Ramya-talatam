@@ -54,9 +54,13 @@
         <!-- <div class="bg1"> <img src="https://leetcode.com/_next/static/images/landing-oval-4e0c58914f7b91879ef15b572db341b7.png"></div> -->
         <div class="d1">
             <div >
+              <span style="color: var(--brand-orange);font-size: 1.5rem;
+              line-height: 2rem;"></span>
                 <h1>Bring LeetCode to Your School</h1>
-                <p>Save 38% off on our Yearly Subscription!</p> 
-                    <p>Gather 50 or more schoolmates to get LeetCode Premium annually for a continued lifetime at only <br> $99! <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-full w-full"><path fill-rule="evenodd" d="M12 11a1 1 0 011 1v4a1 1 0 11-2 0v-4a1 1 0 011-1zm0-3a1 1 0 110 2 1 1 0 010-2zm0 14C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd"></path></svg></p>
+                <p>Save <span style="color: orange;font-size: 1.5rem;
+                  line-height: 2rem;font-weight: 600;">38% off</span> on our Yearly Subscription!</p> 
+                    <p>Gather 50 or more schoolmates to get LeetCode Premium annually for a continued lifetime at only <br> <span style="color: orange;font-size: 1.5rem;
+                      line-height: 2rem;font-weight: 600;">$99!</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="h-full w-full"><path fill-rule="evenodd" d="M12 11a1 1 0 011 1v4a1 1 0 11-2 0v-4a1 1 0 011-1zm0-3a1 1 0 110 2 1 1 0 010-2zm0 14C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd"></path></svg></p>
             </div>
             <div>
                 <img src="https://leetcode.com/_next/static/images/school-ed95f17f410f2757ac13ab98cea3f073.png" alt="student">
@@ -130,13 +134,14 @@
               If you didn’t reach 50 people before the end of the event, you’ll get <span class="font-semibold">$99</span> full refund.
             </li>
           </ol>
+          <br>
           <h3>All users who have a school email are able to register and purchase the premium at the discounted price before the deadline. So spread the word, act fast, and become the next software engineer at your dream job!</h3>
     </div>
 
     <div class="faq2">
-        <h1>Frequently asked questions</h1>
+        <div><h1>Frequently asked questions</h1></div>
       
-        
+        <div>
           <!-- I’ve paid $99, why isn’t my premium subscription activated yet? -->
           <div class="faq-item">
             <div class="question">I’ve paid $99, why isn’t my premium subscription activated yet?</div>
@@ -201,8 +206,23 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
     </main>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll('.faq-item');
 
+    faqItems.forEach((item) => {
+      const question = item.querySelector('.question');
+
+      question.addEventListener('click', function () {
+        item.classList.toggle('active');
+        const answer = item.querySelector('.answer');
+        answer.style.display = item.classList.contains('active') ? 'block' : 'none';
+      });
+    });
+  });
+</script>
 </html>

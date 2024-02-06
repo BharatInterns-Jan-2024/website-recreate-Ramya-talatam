@@ -3,7 +3,7 @@ main{
     padding: 6rem;
     gap: 6rem;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #fcf8ed;
 }
 .font-semibold {
     font-weight: bold;
@@ -43,8 +43,16 @@ main{
     font-weight: 500;
     
   }
+  .faq2
+  {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:4rem;
+  }
   .faq-item
   {
+    width: 900px;
+    cursor: pointer;
     border-bottom: 1px solid #dbdada80;
   }
   .answer
